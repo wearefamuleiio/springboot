@@ -3,13 +3,4 @@ server:
 spring:
   application:
     name: config-server
-eureka:
-  instance:
-    preferIpAddress: true
-    #这样写eureka服务注册中心会显示本机ip+端口号
-#    instanceId: ${spring.cloud.client.ipAddress}:10001
-    #这样写eureka服务注册中心会显示项目名和端口号
-    instanceId: ${spring.application.name}:${server.port}
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:10001/eureka  #注册中心地址
+
